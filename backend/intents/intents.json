@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon"],
+      "responses": ["Hello!", "Hi there!", "Greetings!"],
+      "context": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "see ya", "later"],
+      "responses": ["Goodbye!", "See you later!", "Bye bye!"],
+      "context": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it"],
+      "responses": ["You're welcome!", "No problem!", "Happy to help!"],
+      "context": ""
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I didn't understand that. Can you try rephrasing?"],
+      "context": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/out
+.next
+.cache
+
+# misc
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+*.token
+*.secret
+*.credentials
+.azure
+azure.json
+*.azure*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor & system
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.bak
+
+# virtual environment
+.venv
+

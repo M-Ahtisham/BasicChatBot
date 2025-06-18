@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* REMINDER CHECK IF WORKS */
+@layer utilities {
+  .scrollbar-hidden::-webkit-scrollbar { display: none; }
+}
+
+@layer utilities {
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-100vh) scale(1.2);
+      opacity: 0;
+    }
+  }
+
+  .bubble {
+    @apply absolute rounded-full bg-white opacity-20;
+    animation: floatUp 20s linear infinite;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: slideFadeIn 2s ease-out;
+  }
+
+  @keyframes slideFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
